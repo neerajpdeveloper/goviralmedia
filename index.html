@@ -14,50 +14,83 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
         }
+
+        /* Header */
         header {
             background: linear-gradient(45deg, #007bff, #6610f2);
             color: white;
             padding: 20px 0;
+            border-bottom: 3px solid #ffc107;
         }
+        
         header .nav-link {
             color: white;
             font-weight: bold;
+            text-transform: uppercase;
         }
+        
         header .nav-link:hover {
             color: #ffc107;
         }
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-        footer a {
-            color: #ffc107;
-        }
-        footer a:hover {
-            color: #ffffff;
-        }
+
+        /* Hero Section */
         .hero {
             background-color: #f8f9fa;
             padding: 60px 0;
         }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            border-top: 3px solid #007bff;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        footer .social-icons a {
+            color: #ffc107;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer .social-icons a:hover {
+            color: #ffffff;
+        }
+
+        /* Service Cards */
         .service-card {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             border-radius: 5px;
-            text-align: center;
+            background-color: #ffffff;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
         .service-card:hover {
             background-color: #007bff;
             color: white;
+            transform: translateY(-10px);
         }
     </style>
 </head>
@@ -133,7 +166,7 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">"Goviral Media Technology helped us achieve great results in digital marketing. Their team is knowledgeable and dedicated."</p>
-                            <footer class="blockquote-footer">Client Name</footer>
+                            <footer class="blockquote-footer">Deekak Chauhan, Mumbai</footer>
                         </div>
                     </div>
                 </div>
@@ -141,7 +174,7 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">"Professional and efficient service. Our website was built to perfection!"</p>
-                            <footer class="blockquote-footer">Client Name</footer>
+                            <footer class="blockquote-footer">Manoj Kumar, Delhi</footer>
                         </div>
                     </div>
                 </div>
@@ -149,7 +182,7 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">"They delivered our project on time and exceeded our expectations. Highly recommend!"</p>
-                            <footer class="blockquote-footer">Client Name</footer>
+                            <footer class="blockquote-footer">Kapil Mittal, Pune</footer>
                         </div>
                     </div>
                 </div>
@@ -181,6 +214,11 @@
                 <li class="list-inline-item"><a href="services.html">Our Services</a></li>
                 <li class="list-inline-item"><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="social-icons mt-3">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
 
