@@ -21,16 +21,21 @@
         header {
             background: linear-gradient(45deg, #007bff, #6610f2);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             border-bottom: 3px solid #ffc107;
         }
-        
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
         header .nav-link {
             color: white;
             font-weight: bold;
             text-transform: uppercase;
         }
-        
+
         header .nav-link:hover {
             color: #ffc107;
         }
@@ -38,16 +43,143 @@
         /* Hero Section */
         .hero {
             background-color: #f8f9fa;
-            padding: 60px 0;
+            padding: 80px 0;
+            text-align: center;
+            background-image: url('https://via.placeholder.com/1920x600'); /* Placeholder Image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
         }
 
         .btn-primary {
             background-color: #007bff;
             border: none;
+            padding: 15px 30px;
+            font-size: 18px;
         }
 
         .btn-primary:hover {
             background-color: #0056b3;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 80px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f1f1f1;
+            padding: 80px 0;
+        }
+
+        .services h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-10px);
+        }
+
+        .service-card h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Review Section */
+        .reviews {
+            background-color: #ffffff;
+            padding: 80px 0;
+        }
+
+        .reviews h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .review-card {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-10px);
+        }
+
+        .review-card footer {
+            font-size: 18px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
         }
 
         /* Footer */
@@ -55,17 +187,17 @@
             background-color: #343a40;
             color: white;
             padding: 30px 0;
-            border-top: 3px solid #007bff;
+            text-align: center;
         }
 
         footer a {
             color: #ffc107;
             text-decoration: none;
+            margin: 0 10px;
         }
 
         footer a:hover {
             color: #ffffff;
-            text-decoration: underline;
         }
 
         footer .social-icons a {
@@ -77,24 +209,10 @@
         footer .social-icons a:hover {
             color: #ffffff;
         }
-
-        /* Service Cards */
-        .service-card {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 5px;
-            background-color: #ffffff;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .service-card:hover {
-            background-color: #007bff;
-            color: white;
-            transform: translateY(-10px);
-        }
     </style>
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <div class="container">
@@ -113,7 +231,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero text-center">
+    <section class="hero">
         <div class="container">
             <h2>Welcome to Goviral Media Technology</h2>
             <p>Your trusted partner for scalable and innovative IT solutions in Delhi and beyond.</p>
@@ -122,18 +240,18 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about py-5">
-        <div class="container text-center">
+    <section class="about">
+        <div class="container">
             <h2>About Us</h2>
             <p>At Goviral Media Technology, we specialize in delivering cutting-edge digital marketing services, robust e-commerce solutions, and custom web portals. Based in Delhi, our expertise lies in creating value-driven solutions that help businesses thrive.</p>
         </div>
     </section>
 
     <!-- Our Services Section -->
-    <section class="services py-5 bg-light">
+    <section class="services">
         <div class="container text-center">
             <h2>Our Services</h2>
-            <div class="row mt-4">
+            <div class="row">
                 <div class="col-md-4">
                     <div class="service-card">
                         <h4>Digital Marketing</h4>
@@ -158,41 +276,35 @@
     </section>
 
     <!-- Reviews Section -->
-    <section class="reviews py-5 bg-light">
+    <section class="reviews">
         <div class="container">
-            <h2 class="text-center">What Our Clients Say</h2>
-            <div class="row mt-4">
+            <h2>What Our Clients Say</h2>
+            <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Goviral Media Technology helped us achieve great results in digital marketing. Their team is knowledgeable and dedicated."</p>
-                            <footer class="blockquote-footer">Deekak Chauhan, Mumbai</footer>
-                        </div>
+                    <div class="review-card">
+                        <p>"Goviral Media Technology helped us achieve great results in digital marketing. Their team is knowledgeable and dedicated."</p>
+                        <footer>Deekak Chauhan, Mumbai</footer>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Professional and efficient service. Our website was built to perfection!"</p>
-                            <footer class="blockquote-footer">Manoj Kumar, Delhi</footer>
-                        </div>
+                    <div class="review-card">
+                        <p>"Professional and efficient service. Our website was built to perfection!"</p>
+                        <footer>Manoj Kumar, Delhi</footer>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"They delivered our project on time and exceeded our expectations. Highly recommend!"</p>
-                            <footer class="blockquote-footer">Kapil Mittal, Pune</footer>
-                        </div>
+                    <div class="review-card">
+                        <p>"They delivered our project on time and exceeded our expectations. Highly recommend!"</p>
+                        <footer>Kapil Mittal, Pune</footer>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section class="contact py-5">
-        <div class="container text-center">
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
             <h2>Contact Us</h2>
             <p>Have questions? Get in touch with us through call or WhatsApp.</p>
             <a href="tel:+917455987808" class="btn btn-success btn-lg mx-2">
@@ -206,7 +318,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container">
             <p>&copy; 2024 Goviral Media Technology | All rights reserved</p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="index.html">Home</a></li>
@@ -214,7 +326,7 @@
                 <li class="list-inline-item"><a href="services.html">Our Services</a></li>
                 <li class="list-inline-item"><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="social-icons mt-3">
+            <div class="social-icons">
                 <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
