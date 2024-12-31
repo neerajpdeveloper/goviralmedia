@@ -1,17 +1,3 @@
-<?php
-// Save contact form queries to query.txt
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    // Prepare the content to save to the text file
-    $queryContent = "Name: $name\nEmail: $email\nMessage: $message\n\n";
-
-    // Save the data to query.txt
-    file_put_contents('query.txt', $queryContent, FILE_APPEND);
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
