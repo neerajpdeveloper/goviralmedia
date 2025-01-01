@@ -3,48 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Goviral Media Technology: Premier digital marketing service in Delhi. Specialized in business websites, e-commerce, web portals, real estate solutions, and API integrations.">
-    <meta name="keywords" content="digital marketing service in Delhi, business websites, e-commerce websites, real estate portals, travel portals, CRM solutions, API integration, payment gateway integration, Goviral Media Technology">
+    <meta name="description" content="Goviral Media Technology - The best website designing and development company in Delhi. Offering top-notch digital marketing services, e-commerce solutions, and web portals in Delhi.">
+    <meta name="keywords" content="website designing company in Delhi, website development company in Delhi, digital marketing service in Delhi, website development in Delhi, top 10 digital marketing company in Delhi, best website development service provider in Delhi">
     <meta name="author" content="Goviral Media Technology">
-    <title>Goviral Media Technology</title>
-    <!-- Bootstrap CSS -->
+    <title>Website Designing and Digital Marketing Services in Delhi | Goviral Media Technology</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <meta name="google-site-verification" content="G8KTGHVC7KDGyxLSaLxg5O0twq8wZB35GxDZXxDdx28" />
+    <meta name="google-site-verification" content="G8KTGHVC7KDGyxLSaLxg5O0twq8wZB35GxDZXxDdx28">
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
         }
-
-        /* Header */
         header {
             background: linear-gradient(45deg, #007bff, #6610f2);
             color: white;
             padding: 40px 0;
             border-bottom: 3px solid #ffc107;
         }
-
         header h1 {
             font-size: 36px;
             font-weight: bold;
         }
-
         header .nav-link {
             color: white;
             font-weight: bold;
             text-transform: uppercase;
         }
-
         header .nav-link:hover {
             color: #ffc107;
         }
-       
-
-        /* Banner Section */
         .banner {
-           
+            background-image: url('your-image.jpg');
             background-size: cover;
             height: 80vh;
             color: white;
@@ -55,8 +45,6 @@
             justify-content: center;
             align-items: center;
         }
-
-        /* Overlay for text readability */
         .banner::before {
             content: '';
             position: absolute;
@@ -66,94 +54,29 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.4);
         }
-
         .banner .container {
             position: relative;
             z-index: 1;
         }
-
         .banner h2 {
             font-size: 48px;
             margin-bottom: 20px;
         }
-
-        .banner p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-
         .btn-primary {
             background-color: #007bff;
             border: none;
             padding: 15px 30px;
             font-size: 18px;
         }
-
         .btn-primary:hover {
             background-color: #0056b3;
         }
-
-        /* Hero Section */
-        .hero {
-            background-color: #f8f9fa;
+        .about, .services, .contact {
             padding: 80px 0;
-            text-align: center;
-         
-            background-size: cover;
-            background-position: center;
-            color: #fff;
         }
-
-        .hero h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-
-        /* About Us Section */
-        .about {
-            padding: 80px 0;
-            background-color: #ffffff;
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 40px;
-            margin-bottom: 30px;
-        }
-
-        .about p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Services Section */
         .services {
             background-color: #f1f1f1;
-            padding: 80px 0;
         }
-
-        .services h2 {
-            font-size: 40px;
-            margin-bottom: 40px;
-        }
-
         .service-card {
             background-color: #fff;
             padding: 30px;
@@ -162,110 +85,25 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-
         .service-card:hover {
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
             transform: translateY(-10px);
         }
-
-        .service-card h4 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .service-card p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        /* Review Section */
-        .reviews {
-            background-color: #ffffff;
-            padding: 80px 0;
-        }
-
-        .reviews h2 {
-            font-size: 40px;
-            margin-bottom: 40px;
-        }
-
-        .review-card {
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .review-card:hover {
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            transform: translateY(-10px);
-        }
-
-        .review-card footer {
-            font-size: 18px;
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: #f8f9fa;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 40px;
-            margin-bottom: 30px;
-        }
-
-        .btn-success {
-            background-color: #28a745;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            margin: 10px;
-        }
-
-        .btn-success:hover {
-            background-color: #218838;
-        }
-
-        /* Footer */
         footer {
             background-color: #343a40;
             color: white;
             padding: 30px 0;
             text-align: center;
         }
-
         footer a {
             color: #ffc107;
-            text-decoration: none;
-            margin: 0 10px;
         }
-
         footer a:hover {
-            color: #ffffff;
-        }
-
-        footer .social-icons a {
-            color: #ffc107;
-            margin: 0 10px;
-            font-size: 20px;
-        }
-
-        footer .social-icons a:hover {
             color: #ffffff;
         }
     </style>
 </head>
 <body>
-
 <header>
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
@@ -276,120 +114,68 @@
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="http://goviralmedia.infinityfreeapp.com/" class="nav-link">Other Link</a></li>
-                    
                 </ul>
             </nav>
         </div>
     </div>
 </header>
-    <!-- Banner Section -->
-    <section class="banner">
-        <div class="container">
-            <h2>Welcome to Goviral Media Technology</h2>
-            <p>Your trusted partner for scalable and innovative IT solutions in Delhi and beyond.</p>
-            <a href="services.html" class="btn btn-primary btn-lg">Explore Our Services</a>
-        </div>
-    </section>
-
-
-
-    <!-- About Us Section -->
-    <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At Goviral Media Technology, we specialize in delivering cutting-edge digital marketing services, robust e-commerce solutions, and custom web portals. Based in Delhi, our expertise lies in creating value-driven solutions that help businesses thrive.</p>
-        </div>
-    </section>
-
-    <!-- Our Services Section -->
-    <section class="services">
-        <div class="container text-center">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <h4>Digital Marketing</h4>
-                        <p>We provide comprehensive digital marketing solutions, including SEO, social media, and paid campaigns to help you grow your brand.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <h4>Web Development</h4>
-                        <p>We build user-friendly, responsive websites tailored to your business needs, offering the latest technologies and SEO optimization.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <h4>E-commerce Solutions</h4>
-                        <p>From secure payment gateways to intuitive shopping experiences, we create fully optimized e-commerce solutions for businesses of all sizes.</p>
-                    </div>
+<section class="banner">
+    <div class="container">
+        <h2>Top Website Designing and Digital Marketing Services in Delhi</h2>
+        <p>Your trusted partner for innovative IT solutions in Delhi.</p>
+        <a href="services.html" class="btn btn-primary btn-lg">Explore Our Services</a>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Goviral Media Technology is a leading website designing and development company in Delhi. We specialize in providing top-notch digital marketing services, e-commerce solutions, and web portal development to help your business succeed.</p>
+    </div>
+</section>
+<section class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h4>Website Development</h4>
+                    <p>Custom, SEO-friendly websites tailored to your needs. Recognized as the best website development service provider in Delhi.</p>
                 </div>
             </div>
-            <a href="services.html" class="btn btn-success mt-4">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="reviews">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="review-card">
-                        <p>"Goviral Media Technology helped us achieve great results in digital marketing. Their team is knowledgeable and dedicated."</p>
-                        <footer>Deekak Chauhan, Mumbai</footer>
-                    </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h4>Digital Marketing</h4>
+                    <p>Rank among the top 10 digital marketing companies in Delhi with our innovative and results-driven marketing strategies.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="review-card">
-                        <p>"Professional and efficient service. Our website was built to perfection!"</p>
-                        <footer>Manoj Kumar, Delhi</footer>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review-card">
-                        <p>"They delivered our project on time and exceeded our expectations. Highly recommend!"</p>
-                        <footer>Kapil Mittal, Pune</footer>
-                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h4>E-commerce Solutions</h4>
+                    <p>Secure and scalable e-commerce platforms for businesses of all sizes, integrated with advanced features and payment gateways.</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions? Get in touch with us through call or WhatsApp.</p>
-            <a href="tel:+917455987808" class="btn btn-success btn-lg mx-2">
-                <i class="fas fa-phone-alt"></i> Call Us
-            </a>
-            <a href="https://wa.me/917455987808" class="btn btn-success btn-lg mx-2">
-                <i class="fab fa-whatsapp"></i> WhatsApp Us
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Goviral Media Technology | All rights reserved</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="about.html">About Us</a></li>
-                <li class="list-inline-item"><a href="services.html">Our Services</a></li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</section>
+<section class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Contact us for the best website designing, development, and digital marketing services in Delhi.</p>
+        <a href="tel:+917455987808" class="btn btn-success btn-lg mx-2"><i class="fas fa-phone-alt"></i> Call Us</a>
+        <a href="https://wa.me/917455987808" class="btn btn-success btn-lg mx-2"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Goviral Media Technology | All rights reserved</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="about.html">About Us</a></li>
+            <li class="list-inline-item"><a href="services.html">Our Services</a></li>
+            <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
